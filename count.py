@@ -1,4 +1,11 @@
-n=input("Enter a sentence  here:")
-y=input("Enter the word which you want to count:")
 
-print(f"The character {y} is repeated {n.count(y)} times")
+def even_divisible(x,y,z):
+    l=[]
+    w=range(x,y+1)
+    for i in w:
+        if i%z==0:
+            l.append(i)
+    return sum(l)
+        
+
+print(even_divisible(1,10,2))

@@ -1,11 +1,9 @@
-# You are provided with a number check whether its odd or even. Print "Odd" or "Even" for the corresponding cases.
-# Note: In case of a decimal, Round off to nearest integer and then find the output. Incase the input is zero, print "Zero".
+# Write a program that reads an integer from the user. Then your program should
+# display a message indicating whether the integer is even or odd.
 
-n=float(input("Enter a number:"))
+n=int(input("Enter a number here:"))
 
-n=round(n,2)
-
-if n/2==0:
+if n%2==0:
     print("Number is even")
 
 else:

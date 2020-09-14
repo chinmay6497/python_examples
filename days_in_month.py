@@ -1,12 +1,13 @@
-# You will be provided with a number. Print the number of days in the month corresponding to that number.
+# The length of a month varies from 28 to 31 days. In this exercise you will create
+# a program that reads the name of a month from the user as a string. Then your
+# program should display the number of days in that month. Display “28 or 29 days”
+# for February so that leap years are addressed.
 
-n=int(input("Enter the number:"))
+n=input("Enter the month here:")
+n=n.lower()
 
-if n==1 or n==3 or n==5 or n==7 or n==8 or n==10 or n==12:
-    print("Number of days are 31")
+if n == 'january':
+    print("31 Days")
 
-elif n==2:
-    print("Number of days are 28 or 29")
-
-else:
-    print("Number of days are 30")
+elif n=='february':
+    print('28 or 29 days')

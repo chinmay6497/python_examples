@@ -1,23 +1,27 @@
-# In XYZ country there is rule that car’s engine no. depends upon car’ number plate. Engine no is sum of all the integers present on car’s Number plate.
-# The issuing authority has hired you in order to provide engine no. to the cars.Your task is to develop an algorithm which takes input as in form of string(Number plate) and gives back
+plate=input("Enter  number plate here:")
 
-# Engine number.
+# if len(plate)==6 and plate[0]>='A' and plate[0]<='Z' and plate[1]>='A' and plate[1]<='Z' and plate[2]>='A' and plate[2]<='Z' and plate[3]>=0 and plate[3]<=9 and plate[4]>=0 and plate[4]<=9 and plate[5]>=0 and plate[5]<=9:
+#     print("Number plate is older")
 
-# Input Description:
-# You are given a string ’s’
+# elif len(plate)==7 and plate[0]>=0 and plate[0]<=9 and plate[1]>=0 and plate[1]<=9 and plate[2]>=0 and plate[2]<=9 and plate[3]>=0 and plate[3]<=9 and plate[4]>='A' and plate[4]<='Z' and plate[5]>='A' and plate[5]<='Z' and plate[6]>='A' and plate[6]<='Z':
+#     print("Number plate is Newer")
 
-# Output Description:
-# Print the engine number
+# else:
+#     print("Enter valid Number")
 
-# Sample Input :
-# HR05-AA-2669
-# Sample Output :
-# 28
+# if plate[0].isalpha and plate[0].isupper and plate[1].isalpha and plate[1].isupper plate[2].isalpha and plate[2].isupper:
+#     print('Valid')
 
-s=input("Enter a number plate here:")
-x=0
 
-for i in s:
-    if i.isdigit() == True:
-        x=x+int(i)
-print(x)
+# if plate[0].isalpha and plate[0].isupper:
+#     print('Valid')
+
+# else:
+#     print('Invalid')
+
+for i in plate[:3]:
+    if i.isupper() and i.isalpha():
+        print('Valid')
+
+    else:
+        print('Invalid')
