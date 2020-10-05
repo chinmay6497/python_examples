@@ -1,0 +1,5 @@
+n=[1,2,4,-5]
+
+num=list(filter(lambda x:x>0,n))
+
+print(num)
