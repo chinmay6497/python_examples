@@ -1,14 +1,20 @@
-# Print the First 3 multiples of the given number "N". (N is a positive integer)
+# def table(n):
+#     # ans=1
+#     l=[]
+#     for i in range(1,11):
+#         ans=n*i
+#         l.append(ans)
+#     return ans
 
-# Note: print the characters with a single space between them.
+# print(table(6))
 
-a=int(input("Enter a positive number"))
-print(a,end=" ")
-print(a*2,end=" ")
-print(a*3,end=" ")
+def table(n):
+    i=1
+    l=[]
+    while i!=11:
+        ans=n*i
+        l.append(ans)
+        i+=1
+    return l
 
-# Method 2
-
-b=a*2
-c=a*3
-print(f"{a}{b}{c}")
+print(table(7))

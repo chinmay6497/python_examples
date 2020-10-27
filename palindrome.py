@@ -1,22 +1,13 @@
-#  Radha newly learnt about palindromic strings.A palindromic string is a string which is same when read from left to right and also from right to left.Help her in implementing the logic.
+def palindrome(n):
+    rev=0
+    temp=n
 
- 
+    while temp != 0:
+        d=temp%10
+        rev=rev*10+d
+        temp=temp//10
+    return rev==n
 
-# Input Description:
-# You are given a String ‘s’
+print(palindrome(7))
 
-# Output Description:
-# Print 1 if String is palindrome or 0 if not
 
-# Sample Input :
-# NITIN
-# Sample Output :
-# 1
-
-s=input("Enter a text here:")
-
-if s==s[::-1]:
-    print("Yes")
-
-else:
-    print("No")
